@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Região de Draevenor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Região de Draevenor</h1>
+        <p>Forjada na busca por poder e sobrevivência</p>
+    </header>
+
+    <section class="intro">
+        <h2>Resumo Geral</h2>
+        <p>Draevenor é uma região forjada na busca incessante por poder e sobrevivência, marcada por um cenário de montanhas sombrias, vales devastados pela guerra e cidades que crescem como fortalezas indomáveis...</p>
+    </section>
+
+    <section class="mapa">
+        <h2>Mapa Interativo</h2>
+        <img src="mapa.png" alt="Mapa de Draevenor" usemap="#mapaDraevenor" />
+        <map name="mapaDraevenor">
+            <area shape="rect" coords="150,50,300,200" href="#" alt="Kael" onclick="mostrarDetalhes('kael')" />
+            <area shape="rect" coords="400,50,600,200" href="#" alt="Varrak" onclick="mostrarDetalhes('varrak')" />
+            <area shape="rect" coords="150,250,300,400" href="#" alt="Thalmar" onclick="mostrarDetalhes('thalmar')" />
+        </map>
+    </section>
+
+    <section id="detalhes">
+        <!-- Pop-up de detalhes -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Região de Draevenor. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
